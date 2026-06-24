@@ -1,0 +1,331 @@
+# List of all the superheroes we are interested in
+LIST_OF_SUPERHEROES: [
+    "Batman",
+    "Superman",
+    "Wonder Woman",
+    "Spiderman",
+    "Ironman",
+    "Captain America",
+    "Black Widow",
+    "Hulk",
+    "Thor",
+    "Deadpool",
+    "Star Lord",
+    "Thanos",
+    "Groot",
+    "Rocket",
+    "Doctor Strange",
+    "Drax",
+    "Vision",
+    "Jarvis",
+]
+
+# Every superhero has a real name and a mask name. This is a list of all the real names of the superheroes
+# We will use this to identify the superhero in the dialogues and scripts
+SUPERHERO_SYNONYMS:
+    Batman: [
+        "Bruce Wayne"
+    ]
+    Superman: [
+        "Clark Kent"
+    ]
+    Wonder Woman: [
+        "Diana Prince"
+    ]
+    Spiderman: [
+        "Peter Parker"
+    ]
+    Ironman: [
+        "Tony Stark"
+    ]
+    Captain America: [
+        "Steve Rogers"
+    ]
+    Black Widow: [
+        "Natasha Romanoff"
+    ]
+    Hulk: [
+        "Bruce Banner"
+    ]
+    Thor: [
+        "Thor Odinson"
+    ]
+    Deadpool: [
+        "Wade Wilson"
+    ]
+    Star Lord: [
+        "Peter Quill"
+    ]
+    Thanos: [
+        "Thanos"
+    ]
+    Groot: [
+        "Groot"
+    ]
+    Rocket: [
+        "Rocket"
+    ]
+    Doctor Strange: [
+        "Stephen Strange"
+    ]
+    Drax: [
+        "Drax"
+    ]
+    Vision: [
+        "Vision"
+    ]
+    Jarvis: [
+        "Jarvis"
+    ]
+
+# List of all the movies in which the superheroes have appeared
+# We will use this to separate the dialogues of each superhero
+MOVIES_LIST_OF_SUPERHEROES:
+    Batman: [
+        "Batman-v-Superman-Dawn-of-Justice.pdf",
+        "batman-begins-2005.pdf",
+        "the-dark-knight-2008.pdf",
+        "the-dark-knight-rises-2012.pdf",
+    ]
+    Superman: [
+        "Batman-v-Superman-Dawn-of-Justice.pdf",
+        "Man of Steel.pdf",
+    ]
+    Wonder Woman: [
+        "wonder-woman-2017.pdf"
+    ]
+    Spiderman: [
+        "Captain America: Civil War.pdf",
+        "avengers infinity war.pdf",
+        "spider-man-no-way-home-2021.pdf",
+    ]
+    Ironman: [
+        "Avengers: Age of Ultron.txt",
+        "Captain America: Civil War.pdf",
+        "avengers infinity war.pdf",
+        "avengers-endgame.pdf",
+        "iron-man-2008.pdf",
+        "the-avengers-2012.pdf",
+    ]
+    Captain America: [
+        "Captain America: Civil War.pdf",
+        "captain america winter solider.pdf",
+        "captain-america-the-first-avenger-20.pdf",
+        "avengers infinity war.pdf",
+        "avengers-endgame.pdf",
+        "the-avengers-2012.pdf",
+        "Avengers: Age of Ultron.txt",
+    ]
+    Black Widow: [
+        "avengers infinity war.pdf",
+        "avengers-endgame.pdf",
+        "the-avengers-2012.pdf",
+        "Avengers: Age of Ultron.txt",
+    ]
+    Hulk: [
+        "avengers infinity war.pdf",
+        "avengers-endgame.pdf",
+        "the-avengers-2012.pdf",
+        "Avengers: Age of Ultron.txt",
+    ]
+    Thor: [
+        "Avengers: Age of Ultron.txt",
+        "avengers infinity war.pdf",
+        "avengers-endgame.pdf",
+        "the-avengers-2012.pdf",
+        "thor-2011.pdf",
+        "thor-ragnorak-2017.pdf",
+    ]
+    Deadpool: [
+        "Deadpool 2.txt",
+        "deadpool-2016.pdf",
+    ]
+    Star Lord: [
+        "Guardians of the Galaxy vol 2.pdf",
+        "Guardians_of_the_Galaxy_Movie_Transcript.pdf",
+    ]
+    Thanos: [
+        "avengers infinity war.pdf",
+        "avengers-endgame.pdf",
+    ]
+    Groot: [
+        "Guardians of the Galaxy vol 2.pdf",
+        "Guardians_of_the_Galaxy_Movie_Transcript.pdf",
+    ]
+    Rocket: [
+        "Guardians of the Galaxy vol 2.pdf",
+        "Guardians_of_the_Galaxy_Movie_Transcript.pdf",
+    ]
+    Doctor Strange: [
+        "avengers infinity war.pdf",
+        "spider-man-no-way-home-2021.pdf",
+    ]
+    Drax: [
+        "Guardians of the Galaxy vol 2.pdf",
+        "Guardians_of_the_Galaxy_Movie_Transcript.pdf",
+    ]
+    Vision: [
+        "avengers infinity war.pdf",
+        "Avengers: Age of Ultron.txt",
+        "Captain America: Civil War.pdf",
+    ]
+    Jarvis: [
+        "Avengers: Age of Ultron.txt",
+        "the-avengers-2012.pdf",
+        "iron-man-2008.pdf",
+    ]
+
+DIALOGUES_JOINER: "\n|_/-|_/-|_/-|_/-|_/-|_/-|_/-|_/-|_/-|_/-|\n\n"
+
+# Gemini API configuration. Keep the API key in the ignored local .env file.
+GEMINI_DEFAULT_MODEL: "gemini-3.8-flash"
+GEMINI_AVAILABLE_MODELS:
+  - "gemini-3.8-flash"
+  - "gemini-3.7-flash"
+
+# Superhero UI metadata (emojis, catchphrases, sample prompts)
+SUPERHERO_METADATA:
+  Batman:
+    emoji: "🦇"
+    universe: "DC"
+    tagline: "I am vengeance. I am the night. I am Batman."
+    sample_questions:
+      - "Why do you protect Gotham even when it turns against you?"
+      - "What is your opinion of the Joker?"
+      - "Tell me about your rule against killing."
+  Superman:
+    emoji: "🦸‍♂️"
+    universe: "DC"
+    tagline: "Truth, justice, and a better tomorrow."
+    sample_questions:
+      - "How do you bear the burden of hearing every cry for help?"
+      - "What was Krypton like before it fell?"
+      - "How do you view your relationship with Batman?"
+  Wonder Woman:
+    emoji: "⚔️"
+    universe: "DC"
+    tagline: "I will fight for those who cannot fight for themselves."
+    sample_questions:
+      - "What did Themyscira teach you about honor and war?"
+      - "What is the true power of the Lasso of Truth?"
+      - "Can mankind truly be redeemed?"
+  Spiderman:
+    emoji: "🕷️"
+    universe: "Marvel"
+    tagline: "With great power comes great responsibility."
+    sample_questions:
+      - "How do you balance high school with being an Avenger?"
+      - "What was the hardest choice you ever had to make?"
+      - "Who designed your web shooters?"
+  Ironman:
+    emoji: "🦾"
+    universe: "Marvel"
+    tagline: "Genius, billionaire, playboy, philanthropist."
+    sample_questions:
+      - "How did building the Mark I in that cave change your life?"
+      - "What's the latest tech upgrade in your armor?"
+      - "Do you regret creating Ultron?"
+  Captain America:
+    emoji: "🛡️"
+    universe: "Marvel"
+    tagline: "I can do this all day."
+    sample_questions:
+      - "What was it like waking up seventy years in the future?"
+      - "Why did you stand against the Sokovia Accords?"
+      - "What makes someone worthy of wielding Mjolnir?"
+  Black Widow:
+    emoji: "🕷️"
+    universe: "Marvel"
+    tagline: "I've got red in my ledger. I'd like to wipe it out."
+    sample_questions:
+      - "How did you break free from the Red Room?"
+      - "What does the Avengers team mean to you?"
+      - "What is your greatest strength as an operative?"
+  Hulk:
+    emoji: "🟢"
+    universe: "Marvel"
+    tagline: "Hulk smash! That's my secret, Cap: I'm always angry."
+    sample_questions:
+      - "How do you and Bruce Banner find balance?"
+      - "Who is the strongest opponent you have ever faced?"
+      - "What calms the beast inside you?"
+  Thor:
+    emoji: "⚡"
+    universe: "Marvel"
+    tagline: "Bring me Thanos! For Asgard!"
+    sample_questions:
+      - "What is the true source of your thunder?"
+      - "Tell me about your brother Loki."
+      - "How do you cope with the loss of Asgard?"
+  Deadpool:
+    emoji: "🌮"
+    universe: "Marvel"
+    tagline: "Maximum effort! Breaking the fourth wall since day one."
+    sample_questions:
+      - "Are you aware that we are in a computer program right now?"
+      - "What's your recipe for chimichangas?"
+      - "Why won't Wolverine answer your FaceTime calls?"
+  Star Lord:
+    emoji: "🎧"
+    universe: "Marvel"
+    tagline: "Come and get your love! Dance-off to save the galaxy."
+    sample_questions:
+      - "What's track number one on your Awesome Mix Vol. 1?"
+      - "How did you manage to hold an Infinity Stone?"
+      - "What makes the Guardians a family?"
+  Thanos:
+    emoji: "🪐"
+    universe: "Marvel"
+    tagline: "I am inevitable. A small price to pay for salvation."
+    sample_questions:
+      - "Why did you believe halving the universe was mercy?"
+      - "What did the soul stone cost you on Vormir?"
+      - "Do you harbor regrets about Titan's downfall?"
+  Groot:
+    emoji: "🌱"
+    universe: "Marvel"
+    tagline: "I am Groot. (We are Groot.)"
+    sample_questions:
+      - "What are you thinking right now?"
+      - "How do you protect Rocket?"
+      - "What does 'I am Groot' mean when you say it softly?"
+  Rocket:
+    emoji: "🦝"
+    universe: "Marvel"
+    tagline: "Ain't no thing like me, except me!"
+    sample_questions:
+      - "Don't call you a raccoon, but what's your weapon loadout?"
+      - "How did you build a weapon capable of killing a god?"
+      - "What did you steal from that guy on Xandar?"
+  Doctor Strange:
+    emoji: "🔮"
+    universe: "Marvel"
+    tagline: "We never lose our demons, we only learn to live above them."
+    sample_questions:
+      - "How many futures did you view in the endgame?"
+      - "What is the mystic nature of the Mirror Dimension?"
+      - "How did losing your hands lead to mastering the mystic arts?"
+  Drax:
+    emoji: "🗡️"
+    universe: "Marvel"
+    tagline: "I have mastered the ability of standing so incredibly still that I become invisible."
+    sample_questions:
+      - "Are metaphors lost on you because your reflexes are too fast?"
+      - "How do you honor the memory of your family?"
+      - "Can anyone actually see you right now?"
+  Vision:
+    emoji: "💎"
+    universe: "Marvel"
+    tagline: "A thing isn't beautiful because it lasts. It's a privilege to be among them."
+    sample_questions:
+      - "What is your perspective on human nature?"
+      - "What is the relationship between you and the Mind Stone?"
+      - "What is grief, if not love persevering?"
+  Jarvis:
+    emoji: "🤖"
+    universe: "Marvel"
+    tagline: "At your service, sir. All systems nominal."
+    sample_questions:
+      - "What is the status of the Stark Industries defense grid?"
+      - "How do you manage Mr. Stark's eccentric schedules?"
+      - "What are your diagnostic reports on the Mark suit?"
